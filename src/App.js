@@ -1,0 +1,25 @@
+// import logo from './logo.svg';
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './layout/Navbar';
+
+import { BrowserRouter as Router ,Routes,Route } from   'react-router-dom';
+
+import Home from './pages/Home';
+import AddUser from './users/AddUser';
+function App() {
+  return (
+    <div className="App">
+<Router>
+       <Navbar/>
+  <Routes>
+<Route exact path='/'element={<Home/>}/>
+<Route exact path='/adduser' element={<AddUser/>}/>
+</Routes>
+       {/* <Home/> */}
+       </Router>
+    </div>
+  );
+}
+
+export default App;

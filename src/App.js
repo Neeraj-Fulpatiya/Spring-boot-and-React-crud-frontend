@@ -35,6 +35,7 @@ import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
 import UserDetailsWithVehicles from "./pages/UserDetailsWithVehicles";
 import UserVehicles from "./pages/UserVehicles";
+import ViewVehicles from "./pages/ViewVehicles";
 
 function App() {
   return (
@@ -49,6 +50,8 @@ function App() {
           <Route exact path="/viewuser/:id" element={<ViewUser />} />
           <Route path="/uservehicles/:id" element={<UserVehicles />} />
          {/* <Route path="/user/:userId" element={<UserDetailsWithVehicles/>} /> */}
+        <Route path="/vehicles/:userId" element={<ViewVehicles />} />
+
         </Routes>
       </Router>
     </div>

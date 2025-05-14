@@ -33,10 +33,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddUser from "./users/AddUser";
 import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
-import UserDetailsWithVehicles from "./pages/UserDetailsWithVehicles";
+// import UserDetailsWithVehicles from "./pages/UserDetailsWithVehicles";
 import UserVehicles from "./pages/UserVehicles";
+// import ViewVehicles from "./pages/ViewVehicles";
 import ViewVehicles from "./pages/ViewVehicles";
-
+import OrderSummary from "./pages/OrderSummary";
 function App() {
   return (
     <div className="App">
@@ -51,6 +52,7 @@ function App() {
           <Route path="/uservehicles/:id" element={<UserVehicles />} />
          {/* <Route path="/user/:userId" element={<UserDetailsWithVehicles/>} /> */}
         <Route path="/vehicles/:userId" element={<ViewVehicles />} />
+<Route path="/ordersummary" element={<OrderSummary />} />
 
         </Routes>
       </Router>
